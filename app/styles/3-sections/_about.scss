@@ -1,0 +1,49 @@
+.about{
+	background-color: $about-gray;
+}
+
+.about-image{
+	padding-top: 70px;
+    padding-bottom: 70px;
+	img{
+		
+		border-radius: 50%;
+	}
+}
+
+@media (max-width: $mobile) {
+	.about-image{
+		text-align: center;	
+	}	
+}
+
+
+.about-info{
+	
+	.about-info-wrapper{
+		padding: 70px 20px 70px 20px;
+		h3{
+			color: $text-main;
+			font-family: $upper-case-font;
+			text-transform: uppercase;
+			font-size: em(32px);
+			margin-bottom: 20px;
+		}
+		p{
+			margin-bottom: 15px;
+			font-size: em(16px);
+			color: $dark-text;
+			font-weight: 600;
+		}
+		.download-resume{
+			margin-top: 22px;
+			a{
+				color: $text-important;	
+			}
+			.fa{
+				margin-left: 7px;
+			}	
+		}
+		
+	}	
+}

@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="portfolioApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="home">
+      <header>
+        <div class="header-position">
+          <h1 class="logo">CP</h1>
+          <nav class="main-nav">
+            <ul>
+              <li><a class="main-section" ng-href="#/">Work</a></li>
+              <li><a ng-href="#/mack-boring">Mack Boring</a></li>
+              <li><a ng-href="#/pinnacle-fcu">Pinnacle FCU</a></li>
+              <li><a ng-href="#/case-mason">Case Mason</a></li>
+              <li><a ng-href="#/meyer-depew">Meyer Depew</a></li>
+              <li><a ng-href="">Lee H. Smith</a></li>
+              <li><a ng-href="">HSI LumaNext</a></li>
+              <li><a class="main-section" href="">About</a></li>
+              <li><a class="main-section" href="">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="mobile-nav-toggle">
+            <span></span>
+
+          </div>
+
+        </div>
+      </header>
+
+      <div ng-view class="test"></div>
+
+
+
+    </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/meyer-depew.js"></script>
+        <script src="scripts/controllers/mack-boring.js"></script>
+        <script src="scripts/controllers/pinnacle-fcu.js"></script>
+        <script src="scripts/controllers/case-mason.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

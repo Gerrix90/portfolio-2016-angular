@@ -1,0 +1,41 @@
+.hero {
+	background-image: url('../images/hero.jpg');
+	background-size: cover;
+	background-position: center top;
+	.hero-title{
+		text-transform: uppercase;
+		text-align: center;
+		font-size: em(48px);
+
+		h1{
+			font-family: $upper-case-font;
+			color: $text-important;
+			padding: 0px;
+			margin: 0px;
+		}
+		h2{
+			font-family: $upper-case-font;
+			color: $text-main;
+			padding: 0px;
+			margin: 0px;
+		}
+	}
+}
+
+@media (max-width: $mobile) {
+	.hero {
+		.hero-title{
+			max-width: 300px;
+			margin: 0 auto;
+			padding: 110px 10px 0px 10px;
+			font-size: em(38px);
+
+			h1{
+				
+			}
+			h2{
+				line-height: 1;		
+			}
+		}
+	}	
+}
