@@ -12,6 +12,9 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- endbuild -->
   </head>
   <body ng-app="portfolioApp">
@@ -23,18 +26,18 @@
     <div class="home">
       <header>
         <div class="header-position">
-          <h1 class="logo">CP</h1>
-          <nav class="main-nav">
+          <a ng-href="#/"><h1 class="logo">CP</h1></a>
+          <nav ng-controller="navController" class="main-nav">
             <ul>
-              <li><a class="main-section" ng-href="#/">Work</a></li>
-              <li><a ng-href="#/mack-boring">Mack Boring</a></li>
-              <li><a ng-href="#/pinnacle-fcu">Pinnacle FCU</a></li>
-              <li><a ng-href="#/case-mason">Case Mason</a></li>
-              <li><a ng-href="#/meyer-depew">Meyer Depew</a></li>
-              <li><a ng-href="">Lee H. Smith</a></li>
-              <li><a ng-href="">HSI LumaNext</a></li>
-              <li><a class="main-section" href="">About</a></li>
-              <li><a class="main-section" href="">Contact</a></li>
+              <li ng-class="{active: isActive('/')}"><a class="main-section" ng-href="#/">Work</a></li>
+              <li ng-class="{active: isActive('/mack-boring')}"><a ng-href="#/mack-boring">Mack Boring</a></li>
+              <li ng-class="{active: isActive('/pinnacle-fcu')}"><a ng-href="#/pinnacle-fcu">Pinnacle FCU</a></li>
+              <li ng-class="{active: isActive('/case-mason')}"><a ng-href="#/case-mason">Case Mason</a></li>
+              <li ng-class="{active: isActive('/meyer-depew')}"><a ng-href="#/meyer-depew">Meyer Depew</a></li>
+              <li ng-class="{active: isActive('/')}"><a ng-href="">Lee H. Smith</a></li>
+              <li ng-class="{active: isActive('/')}"><a ng-href="">HSI LumaNext</a></li>
+              <li ng-class="{active: isActive('/')}"><a class="main-section" href="">About</a></li>
+              <li ng-class="{active: isActive('/')}"><a class="main-section" href="">Contact</a></li>
             </ul>
           </nav>
 
@@ -46,7 +49,7 @@
         </div>
       </header>
 
-      <div ng-view class="test"></div>
+      <div ng-view class="pageFlex"></div>
 
 
 
@@ -84,6 +87,8 @@
         <script src="scripts/controllers/mack-boring.js"></script>
         <script src="scripts/controllers/pinnacle-fcu.js"></script>
         <script src="scripts/controllers/case-mason.js"></script>
+        <script src="scripts/directives/homework.js"></script>
+        <script src="scripts/controllers/navcontroller.js"></script>
         <!-- endbuild -->
 </body>
 </html>

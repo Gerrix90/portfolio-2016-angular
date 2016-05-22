@@ -1,6 +1,8 @@
-.work {
-	.flex:nth-child(even) {
-		flex-direction: row-reverse;
+#work{
+	.homeWorkRow:nth-child(even){
+		.flex{
+			flex-direction:row-reverse;
+		}
 	}
 }
 
@@ -50,6 +52,9 @@
 			}
 			a{
 				color: $text-important;
+				&:hover{
+					color: $text-main;
+				}
 			}
 
 

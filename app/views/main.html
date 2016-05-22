@@ -7,41 +7,10 @@
     </div>
   </section>
 
-  <section class="work">
-    <div class="flex">
-      <div id="mbp" class="work-image"></div>
-      <div class="work-info flex flex--center">
-        <div class="info-wrapper">
-          <h3>Mack Boring</h3>
-          <h4><span>Agency:</span> Delia Associates</h4>
-          <h4><span>Role:</span> Front-End Developer</h4>
-          <h4 class="view-project"><a href="">View Project <i class="fa fa-arrow-circle-right"></i></a></h4>
-        </div>
-      </div>
+  <section id="work">
+    <div class="homeWorkRow" ng-repeat="homeWork in homeWorkInfo">
+      <home-work data="homeWork" class="flex"></home-work>
     </div>
-    <div class="flex">
-      <div id="pfc" class="work-image"></div>
-      <div class="work-info flex flex--center">
-        <div class="info-wrapper">
-          <h3>Pinnacle FCU</h3>
-          <h4><span>Agency:</span> Delia Associates</h4>
-          <h4><span>Role:</span> Front-End Developer</h4>
-          <h4 class="view-project"><a href="">View Project <i class="fa fa-arrow-circle-right"></i></a></h4>
-        </div>
-      </div>
-    </div>
-    <div class="flex">
-      <div id="mdp" class="work-image"></div>
-      <div class="work-info flex flex--center">
-        <div class="info-wrapper">
-          <h3>Meyer Depew</h3>
-          <h4><span>Agency:</span> Delia Associates</h4>
-          <h4><span>Role:</span> Front-End Developer</h4>
-          <h4 class="view-project"><a href="">View Project <i class="fa fa-arrow-circle-right"></i></a></h4>
-        </div>
-      </div>
-    </div>
-
   </section>
 
   <section class="about">
