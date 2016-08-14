@@ -8,32 +8,26 @@
  * Controller of the portfolioApp
  */
 angular.module('portfolioApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.header = {
-      name: "Cory Pierson",
-      role: "Front-End Developer"
-    };
-    $scope.homeWorkInfo = [
-      {
-        id: 'mbp',
-        name: 'Mack Boring',
-        agency: 'Delia Associates',
-        role: 'Front-End Developer',
-        link: 'mack-boring'
-      },
-      {
-        id: 'pfc',
-        name: 'Pinnacle FCU',
-        agency: 'Delia Associates',
-        role: 'Front-End Developer',
-        link: 'pinnacle-fcu'
-      },
-      {
-        id: 'mdp',
-        name: 'Meyer Depew',
-        agency: 'Delia Associates',
-        role: 'Front-End Developer',
-        link: 'meyer-depew'
-      }
-    ];
+  .controller('MainCtrl', function ($scope, myWork) {
+
+    // var promise = myWork.getWork();
+    // promise.then(function (data){
+    //   $scope.myWork = data.data;
+    //   // console.log($scope.myWork);
+    // });
+    var myWorkAry = new myWork();
+    $scope.myWork = myWorkAry.getWork();
+
+    console.log($scope.myWork);
+
+    var myHeaderAry = new myWork();
+    $scope.myHeader = myHeaderAry.getHeader();
+
+    console.log($scope.myHeader);
+
+    // $scope.header = {
+    //   name: "Cory Pierson",
+    //   role: "Front-End Developer"
+    // };
+
   });

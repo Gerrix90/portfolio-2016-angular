@@ -12,10 +12,7 @@ angular.module('portfolioApp')
       templateUrl: 'templates/directives/homeWork.html',
       restrict: 'E',
       scope: {
-        homeWorkData: '=data'
-      },
-      controller: function($scope){
-        console.log($scope.homeWorkData);
+        myWorkData: '=data'
       }
     };
   });

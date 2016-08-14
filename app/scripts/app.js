@@ -29,25 +29,10 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
-      .when('/meyer-depew', {
-        templateUrl: 'views/meyer-depew.html',
-        controller: 'MeyerDepewCtrl',
-        controllerAs: 'meyerDepew'
-      })
-      .when('/mack-boring', {
-        templateUrl: 'views/mack-boring.html',
-        controller: 'MackBoringCtrl',
-        controllerAs: 'mackBoring'
-      })
-      .when('/pinnacle-fcu', {
-        templateUrl: 'views/pinnacle-fcu.html',
-        controller: 'PinnacleFcuCtrl',
-        controllerAs: 'pinnacleFcu'
-      })
-      .when('/case-mason', {
-        templateUrl: 'views/case-mason.html',
-        controller: 'CaseMasonCtrl',
-        controllerAs: 'caseMason'
+      .when('/work/:id', {
+        templateUrl: 'views/work.html',
+        controller: 'WorkCtrl',
+        controllerAs: 'work'
       })
       .otherwise({
         redirectTo: '/'

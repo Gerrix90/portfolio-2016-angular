@@ -9,7 +9,7 @@
 
 	@media (max-width: $mobile-menu) {
 		display: block;
-		border: blue solid 1px;
+		border: transparent solid 1px;
 	}
 }
 
@@ -64,13 +64,10 @@
 	width: 65%;
 }
 
-
-
 @media (max-width: $mobile) {
 	.home-sections .flex {
 		display: block;
 	}
-
 	.work-image{
 		width: 100%;
 	}
@@ -85,7 +82,5 @@
 		width: 100%;
 	}
 }
-
-
 
 //mobile

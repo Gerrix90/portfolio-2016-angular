@@ -1,0 +1,37 @@
+<div class="single-work-sections">
+
+  <section class="display-work flex flex--space-vertical">
+    <div class="hero-title">
+      TEST
+      <h1>{{ myHeader.name }}</h1>
+      <h2>{{ myHeader.role }}</h2>
+    </div>
+  </section>
+
+  <section class="single-work-info">
+    <h1>{{thisWork.name}}</h1>
+    <h4>
+      <a ng-href="{{thisWork.link}}" target="_blank">
+        View Site:<i class="fa fa-arrow-circle-right"></i>
+      </a>
+    </h4>
+    <h4><span>Agency:</span> {{thisWork.agency}}</h4>
+    <h4><span>Role:</span> {{thisWork.role}}</h4>
+
+    <h3>{{thisWork.about}}</h3>
+    <p>{{thisWork.responsibilities}}</p>
+
+    <h4 class="next-page">
+      <a ng-href="#/work/{{nextPageLink}}">
+        Next Project:<i class="fa fa-arrow-circle-right"></i>
+      </a>
+    </h4>
+  </section>
+
+
+</div>
+
+
+<!-- <h1>This is the work view. {{thisWork.id}}</h1>
+{{thisWork.name}}
+{{thisWork.role}} -->

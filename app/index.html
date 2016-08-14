@@ -26,16 +26,15 @@
     <div class="home">
       <header>
         <div class="header-position">
-          <a ng-href="#/"><h1 class="logo">CP</h1></a>
+        <a ng-href="#/"> <h1 class="logo">CP</h1></a>
           <nav ng-controller="navController" class="main-nav">
             <ul>
               <li ng-class="{active: isActive('/')}"><a class="main-section" ng-href="#/">Work</a></li>
-              <li ng-class="{active: isActive('/mack-boring')}"><a ng-href="#/mack-boring">Mack Boring</a></li>
-              <li ng-class="{active: isActive('/pinnacle-fcu')}"><a ng-href="#/pinnacle-fcu">Pinnacle FCU</a></li>
-              <li ng-class="{active: isActive('/case-mason')}"><a ng-href="#/case-mason">Case Mason</a></li>
-              <li ng-class="{active: isActive('/meyer-depew')}"><a ng-href="#/meyer-depew">Meyer Depew</a></li>
-              <li ng-class="{active: isActive('/')}"><a ng-href="">Lee H. Smith</a></li>
-              <li ng-class="{active: isActive('/')}"><a ng-href="">HSI LumaNext</a></li>
+              <li ng-class="{active: isActive('/work/mbp')}"><a ng-href="#/work/mbp">Mack Boring</a></li>
+              <li ng-class="{active: isActive('/work/pfc')}"><a ng-href="#/work/pfc">Pinnacle FCU</a></li>
+              <li ng-class="{active: isActive('/work/cmf')}"><a ng-href="#/work/cmf">Case Mason</a></li>
+              <li ng-class="{active: isActive('/work/mdp')}"><a ng-href="#/work/mdp">Meyer Depew</a></li>
+              <li ng-class="{active: isActive('/work/lhs')}"><a ng-href="#/work/lhs">Lee H. Smith</a></li>
               <li ng-class="{active: isActive('/')}"><a class="main-section" href="">About</a></li>
               <li ng-class="{active: isActive('/')}"><a class="main-section" href="">Contact</a></li>
             </ul>
@@ -83,12 +82,11 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
-        <script src="scripts/controllers/meyer-depew.js"></script>
-        <script src="scripts/controllers/mack-boring.js"></script>
-        <script src="scripts/controllers/pinnacle-fcu.js"></script>
-        <script src="scripts/controllers/case-mason.js"></script>
         <script src="scripts/directives/homework.js"></script>
         <script src="scripts/controllers/navcontroller.js"></script>
+        <script src="scripts/directives/singlework.js"></script>
+        <script src="scripts/services/mywork.js"></script>
+        <script src="scripts/controllers/work.js"></script>
         <!-- endbuild -->
 </body>
 </html>
