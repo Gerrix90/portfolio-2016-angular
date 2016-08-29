@@ -40,4 +40,6 @@ angular.module('portfolioApp')
       $scope.nextPageLink = $scope.myWork[nextPage].id;
     }
 
+    $scope.hi = "hi";
+
   });

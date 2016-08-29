@@ -11,11 +11,7 @@ angular.module('portfolioApp')
     return {
       templateUrl: 'templates/directives/singleWork.html',
       restrict: 'E',
-      scope: {
-        singleWorkData: '=data'
-      },
-      controller: function($scope){
-        console.log($scope.singleWorkData);
-      }
+      scope: true,
+      controller: 'WorkCtrl'
     };
   });

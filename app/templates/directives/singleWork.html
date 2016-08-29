@@ -1,13 +1,21 @@
-
-<h1>TEST</h1>
-<h3>{{singleWorkData.name}}</h3>
-
-<!-- <div id="{{homeWorkData.id}}" class="work-image"></div>
-<div class="work-info flex flex--center">
+<div class="single-work-info flex flex--center">
   <div class="info-wrapper">
-    <h3>{{homeWorkData.name}}</h3>
-    <h4><span>Agency:</span> {{homeWorkData.agency}}</h4>
-    <h4><span>Role:</span> {{homeWorkData.role}}</h4>
-    <h4 class="view-project"><a ng-href="#/{{homeWorkData.link}}">View Project <i class="fa fa-arrow-circle-right"></i></a></h4>
+    <h1>{{thisWork.name}}</h1>
+    <h4>
+      <a ng-href="{{thisWork.link}}" target="_blank">
+        View Site:<i class="fa fa-arrow-circle-right"></i>
+      </a>
+    </h4>
+    <h4><span>Agency:</span> {{thisWork.agency}}</h4>
+    <h4><span>Role:</span> {{thisWork.role}}</h4>
+
+    <h3>{{thisWork.about}}</h3>
+    <p>{{thisWork.responsibilities}}</p>
+
+    <h4 class="next-page">
+      <a ng-href="#/work/{{nextPageLink}}">
+        Next Project:<i class="fa fa-arrow-circle-right"></i>
+      </a>
+    </h4>
   </div>
-</div> -->
+</div>
