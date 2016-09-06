@@ -25,7 +25,7 @@ angular.module('portfolioApp')
         		"role": "Front-End Developer",
         		"link": "http://www.mackboring.com/",
             "about": "Mack Boring & Parts Company is a leading provider of power products and solutions, including diesel engines and power generation systems, to the recreational and commercial marine, industrial, off highway and military markets.",
-            "responsibilities": "This responsive site was built with a custom wordpress theme from the ground up. Using advanced custom fields for client usability. Custom Post types for product organization. Bourbon neat for grid, Scss for CSS preprocessor, Javascript for interactivity.  Photoshop to edit images."
+            "responsibilities": "This responsive site was built with a custom wordpress theme from the ground up. Using advanced custom fields for client usability. Custom Post types for product organization. Bourbon neat for grid, SCSS for CSS preprocessor, Javascript for interactivity.  Photoshop to edit images."
         	},
         	{
         		"id": "pfc",
@@ -34,7 +34,7 @@ angular.module('portfolioApp')
         		"role": "Front-End Developer",
         		"link": "https://www.pinnaclefcu.com/",
             "about": "Pinnacle Federal Credit Union offer financial services including savings, checking, direct deposit, secured and unsecured loans, online banking and much more.",
-            "responsibilities": "This responsive site was built with a custom wordpress theme from the ground up. Using advanced custom fields for client usability. Custom Post types for product organization. Bourbon neat for grid, Scss for CSS preprocessor, Javascript for interactivity.  Photoshop to edit images."
+            "responsibilities": "This responsive site was built with a custom wordpress theme from the ground up. Using advanced custom fields for client usability. Custom Post types for product organization. Bourbon neat for grid, SCSS for CSS preprocessor, Javascript for interactivity.  Photoshop to edit images."
         	},
         	{
         		"id": "mdp",
@@ -52,7 +52,7 @@ angular.module('portfolioApp')
         		"link": "http://www.leehsmith.com/",
             "about": "Lee H. Smith delivers highly responsive customer-focused service selling kosher and non-kosher products in very small to large quantities.",
             "about": "Mack Boring & Parts Company is a leading provider of power products and solutions, including diesel engines and power generation systems, to the recreational and commercial marine, industrial, off highway and military markets.",
-            "responsibilities": "For Lee H. Smith, my responsibilites extended beyond development. With input from my peers, I was responsible for the design of this site. This responsive site was built with a custom wordpress theme from the ground up. Using advanced custom fields for client usability. Bourbon neat for grid, Scss for CSS preprocessor, Javascript for interactivity. Photoshop to edit images."
+            "responsibilities": "For Lee H. Smith, my responsibilites extended beyond development. With input from my peers, I was responsible for the design of this site. This responsive site was built with a custom wordpress theme from the ground up. Using advanced custom fields for client usability. Bourbon neat for grid, SCSS for CSS preprocessor, Javascript for interactivity. Photoshop to edit images."
         	}
       ];
     };

@@ -24,28 +24,42 @@
 
     <!-- Add your site or application content here -->
     <div class="home">
-      <header>
+      <header ng-controller="navController">
         <div class="header-position">
-        <a ng-href="#/"> <h1 class="logo">CP</h1></a>
-          <nav ng-controller="navController" class="main-nav">
-            <ul>
-              <li ng-class="{active: isActive('/')}"><a class="main-section" ng-href="#/">Work</a></li>
-              <li ng-class="{active: isActive('/work/mbp')}"><a ng-href="#/work/mbp">Mack Boring</a></li>
-              <li ng-class="{active: isActive('/work/pfc')}"><a ng-href="#/work/pfc">Pinnacle FCU</a></li>
-              <li ng-class="{active: isActive('/work/cmf')}"><a ng-href="#/work/cmf">Case Mason</a></li>
-              <li ng-class="{active: isActive('/work/mdp')}"><a ng-href="#/work/mdp">Meyer Depew</a></li>
-              <li ng-class="{active: isActive('/work/lhs')}"><a ng-href="#/work/lhs">Lee H. Smith</a></li>
-              <li ng-class="{active: isActive('/')}"><a class="main-section" href="">About</a></li>
-              <li ng-class="{active: isActive('/')}"><a class="main-section" href="">Contact</a></li>
-            </ul>
-          </nav>
-
-          <div class="mobile-nav-toggle">
-            <span></span>
-
+          <div class="logo-wrapper">
+            <a ng-href="#/" class="logo">CP</a>
           </div>
+            <nav class="main-nav">
+              <ul>
+                <li ng-class="{active: isActive('/')}"><a class="main-section" ng-href="#/">Work</a></li>
+                <li ng-class="{active: isActive('/work/mbp')}"><a ng-href="#/work/mbp">Mack Boring</a></li>
+                <li ng-class="{active: isActive('/work/pfc')}"><a ng-href="#/work/pfc">Pinnacle FCU</a></li>
+                <li ng-class="{active: isActive('/work/cmf')}"><a ng-href="#/work/cmf">Case Mason</a></li>
+                <li ng-class="{active: isActive('/work/mdp')}"><a ng-href="#/work/mdp">Meyer Depew</a></li>
+                <li ng-class="{active: isActive('/work/lhs')}"><a ng-href="#/work/lhs">Lee H. Smith</a></li>
+                <li ng-class="{active: isActive('/')}"><a class="main-section" href="">About</a></li>
+                <li ng-class="{active: isActive('/')}"><a class="main-section" href="">Contact</a></li>
+              </ul>
+            </nav>
 
+            <div class="mobile-nav-toggle" ng-click="menuToggle()">
+              <span></span>
+            </div>
         </div>
+
+        <nav id="mobile-nav" class="mobile main-nav flex--center" ng-class="{'show-menu': showMenu}">
+          <ul>
+            <li ng-class="{active: isActive('/')}"><a class="main-section" ng-href="#/">Work</a></li>
+            <li ng-class="{active: isActive('/work/mbp')}"><a ng-href="#/work/mbp">Mack Boring</a></li>
+            <li ng-class="{active: isActive('/work/pfc')}"><a ng-href="#/work/pfc">Pinnacle FCU</a></li>
+            <li ng-class="{active: isActive('/work/cmf')}"><a ng-href="#/work/cmf">Case Mason</a></li>
+            <li ng-class="{active: isActive('/work/mdp')}"><a ng-href="#/work/mdp">Meyer Depew</a></li>
+            <li ng-class="{active: isActive('/work/lhs')}"><a ng-href="#/work/lhs">Lee H. Smith</a></li>
+            <li ng-class="{active: isActive('/')}"><a class="main-section" href="">About</a></li>
+            <li ng-class="{active: isActive('/')}"><a class="main-section" href="">Contact</a></li>
+          </ul>
+        </nav>
+
       </header>
 
       <div ng-view class="pageFlex"></div>

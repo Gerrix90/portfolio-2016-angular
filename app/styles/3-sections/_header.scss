@@ -11,17 +11,23 @@
 		bottom: 0px;
 		display: flex;
 		flex-direction: column;
-	}
 
-	.logo{
-		@include hide-text;
-		background-image: url('../images/logo.png');
-		background-repeat: no-repeat;
-		background-position: left;
-		background-size: contain;
-		height: 66px;
-		padding: 0px;
-		margin: 0px 0px 0px 27px;
+		.logo-wrapper{
+			flex: 0;
+			.logo{
+				@include hide-text;
+				background-image: url('../images/logo.png');
+				background-repeat: no-repeat;
+				background-position: left;
+				background-size: contain;
+				height: 66px;
+				padding: 0px;
+				margin: 0px 0px 0px 27px;
+				color: transparent;
+				display: flex;
+				width: 130px;
+			}
+		}
 	}
 
 	.main-nav{
@@ -56,8 +62,14 @@
 			}
 		}
 	}
-
-
+	.mobile.main-nav{
+		display: none;
+		text-align: center;
+		ul{
+			margin-top: 20px;
+			padding: 20px 0px 20px 0px;
+		}
+	}
 
 	.mobile-nav-toggle{
 		display: none;
@@ -94,7 +106,6 @@
 
 @media (max-width: $mobile-menu) {
 	.home header{
-		border: red solid 1px;
 		width: auto;
 		padding: 20px 0px;
 
@@ -106,11 +117,16 @@
 			left: auto;
 			flex-direction: row;
 			align-items: center;
+			.logo-wrapper{
+				flex: 1;
+				.logo{
+					width: 130px;
+				}
+			}
 		}
 
 		.main-nav{
 			display: none;
-
 		}
 
 		.logo{
@@ -119,7 +135,31 @@
 
 		.mobile-nav-toggle{
 			display: flex;
+			&:hover{
+				span,
+				span:before,
+				span:after{
+					background: $text-important;
+				}
+			}
 		}
 
+		.mobile.main-nav.show-menu{
+			display: flex;
+			opacity: 0;
+			animation-name:  dropFade;
+			animation-duration: .75s;
+			animation-timing-function: ease-in-out;
+			animation-fill-mode: forwards;
+		}
+	}
+}
+
+@keyframes dropFade{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
 	}
 }
