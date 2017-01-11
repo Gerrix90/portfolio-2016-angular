@@ -15,6 +15,7 @@ angular.module('portfolioApp')
     $scope.showMenu = false;
     $scope.menuToggle = function(){
       $scope.showMenu = !$scope.showMenu;
-    };
+    },
+    $scope.email = "coryierso@gmail.com";
 
   });

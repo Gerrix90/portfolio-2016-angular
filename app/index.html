@@ -34,11 +34,11 @@
                 <li ng-class="{active: isActive('/')}"><a class="main-section" ng-href="#/">Work</a></li>
                 <li ng-class="{active: isActive('/work/mbp')}"><a ng-href="#/work/mbp">Mack Boring</a></li>
                 <li ng-class="{active: isActive('/work/pfc')}"><a ng-href="#/work/pfc">Pinnacle FCU</a></li>
-                <li ng-class="{active: isActive('/work/cmf')}"><a ng-href="#/work/cmf">Case Mason</a></li>
+                <li ng-class="{active: isActive('/work/pfc')}"><a ng-href="#/work/sdg">SDG Heim</a></li>
                 <li ng-class="{active: isActive('/work/mdp')}"><a ng-href="#/work/mdp">Meyer Depew</a></li>
                 <li ng-class="{active: isActive('/work/lhs')}"><a ng-href="#/work/lhs">Lee H. Smith</a></li>
                 <li ng-class="{active: isActive('/')}"><a class="main-section" href="">About</a></li>
-                <li ng-class="{active: isActive('/')}"><a class="main-section" href="">Contact</a></li>
+                <li ng-class="{active: isActive('/')}"><a class="main-section" ng-href="mailto:{{email}}" target="_self">Contact</a></li>
               </ul>
             </nav>
 
@@ -52,12 +52,13 @@
             <li ng-class="{active: isActive('/')}"><a class="main-section" ng-href="#/">Work</a></li>
             <li ng-class="{active: isActive('/work/mbp')}"><a ng-href="#/work/mbp">Mack Boring</a></li>
             <li ng-class="{active: isActive('/work/pfc')}"><a ng-href="#/work/pfc">Pinnacle FCU</a></li>
-            <li ng-class="{active: isActive('/work/cmf')}"><a ng-href="#/work/cmf">Case Mason</a></li>
             <li ng-class="{active: isActive('/work/mdp')}"><a ng-href="#/work/mdp">Meyer Depew</a></li>
             <li ng-class="{active: isActive('/work/lhs')}"><a ng-href="#/work/lhs">Lee H. Smith</a></li>
             <li ng-class="{active: isActive('/')}"><a class="main-section" href="">About</a></li>
-            <li ng-class="{active: isActive('/')}"><a class="main-section" href="">Contact</a></li>
+            <li ng-class="{active: isActive('/')}"><a class="main-section" ng-href="mailto:{{email}}" target="_self">Contact</a></li>
+
           </ul>
+
         </nav>
 
       </header>
