@@ -27,6 +27,15 @@ angular.module('portfolioApp')
             "about": "Mack Boring & Parts Company is a leading provider of power products and solutions, including diesel engines and power generation systems, to the recreational and commercial marine, industrial, off highway and military markets.",
             "responsibilities": "This responsive site was built with a custom wordpress theme from the ground up. Using advanced custom fields for client usability. Custom Post types for product organization. Bourbon neat for grid, SCSS for CSS preprocessor, Javascript for interactivity.  Photoshop to edit images."
         	},
+          {
+        		"id": "gsh",
+        		"name": "GSH",
+        		"agency": "Delia Associates",
+        		"role": "Front-End Developer",
+        		"link": "http://www.gshgroup.com/",
+            "about": "GSH provides the people, equipment and resources required to maintain your building facilities at their optimum levels of operation.",
+            "responsibilities": "This responsive site was built with a custom wordpress theme from the ground up. Using advanced custom fields for client usability. Bootstrap framework, SCSS for CSS preprocessor, Javascript for interactivity.  Photoshop to edit images."
+        	},
         	{
         		"id": "pfc",
         		"name": "Pinnacle FCU",
