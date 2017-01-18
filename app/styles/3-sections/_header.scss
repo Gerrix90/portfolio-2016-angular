@@ -8,15 +8,14 @@
 		position: fixed;
 		top: 35px;
 		left: 0px;
-		bottom: 0px;
 		display: flex;
 		flex-direction: column;
 
 		.logo-wrapper{
-			flex: 0;
+			
 			.logo{
 				@include hide-text;
-				background-image: url('../images/logo.png');
+				background-image: url('../images/logo.svg');
 				background-repeat: no-repeat;
 				background-position: left;
 				background-size: contain;
