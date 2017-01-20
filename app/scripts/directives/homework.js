@@ -9,7 +9,7 @@
 angular.module('portfolioApp')
   .directive('homeWork', function () {
     return {
-      templateUrl: 'templates/directives/homeWork.html',
+      templateUrl: 'views/homeWork.html',
       restrict: 'E',
       scope: {
         myWorkData: '=data'

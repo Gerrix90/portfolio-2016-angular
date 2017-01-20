@@ -9,7 +9,7 @@
 angular.module('portfolioApp')
   .directive('singleWork', function () {
     return {
-      templateUrl: 'templates/directives/singleWork.html',
+      templateUrl: 'views/singleWork.html',
       restrict: 'E',
       scope: true,
       controller: 'WorkCtrl'
