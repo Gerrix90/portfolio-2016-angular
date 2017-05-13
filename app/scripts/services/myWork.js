@@ -25,7 +25,7 @@ angular.module('portfolioApp')
         		"role": "Front-End Developer and Designer",
         		"link": "https://movie-note.firebaseapp.com/",
             "about": "Move-Note is a personal project I created out of my love for movies. Movie-Note allows a user to lookup and save a movie that interests them to a list for future viewing.",
-            "responsibilities": "This app was built with ReactJS for the front-end and Firebase for the database and authentication. I'm using fetch to call the tmdb api and flexbox for styling."
+            "responsibilities": "This single page app was built with ReactJS. It uses Firebase for the database and authentication, fetch to call the tmdb api and flexbox for the layout."
         	},
         	{
         		"id": "mbp",
