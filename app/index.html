@@ -28,18 +28,19 @@
       <header ng-controller="navController">
         <div class="header-position">
           <div class="logo-wrapper">
-            <a ng-href="#/" class="logo">CP</a>
+            <a ng-href="/" class="logo">CP</a>
           </div>
             <nav class="main-nav">
               <ul>
                 <li ng-class="{active: isActive('/')}"><a class="main-section" ng-href="/">Work</a></li>
+                <li ng-class="{active: isActive('/work/movie-note')}"><a ng-href="/work/movie-note">Movie-Note</a></li>
                 <li ng-class="{active: isActive('/work/mbp')}"><a ng-href="/work/mbp">Mack Boring</a></li>
                 <li ng-class="{active: isActive('/work/gsh')}"><a ng-href="/work/gsh">GSH Group</a></li>
                 <li ng-class="{active: isActive('/work/pfc')}"><a ng-href="/work/pfc">Pinnacle FCU</a></li>
                 <li ng-class="{active: isActive('/work/sdg')}"><a ng-href="/work/sdg">SDG Heim</a></li>
                 <li ng-class="{active: isActive('/work/mdp')}"><a ng-href="/work/mdp">Meyer Depew</a></li>
                 <li ng-class="{active: isActive('/work/lhs')}"><a ng-href="/work/lhs">Lee H. Smith</a></li>
-                <li ng-class="{active: isActive('/')}"><a class="main-section" href="">Resume</a></li>
+                <li ng-class="{active: isActive('/')}"><a class="main-section" target="_self" href="/corypierson-resume.pdf" download="/corypierson-resume.pdf">Resume</a></li>
                 <li ng-class="{active: isActive('/')}"><a class="main-section" ng-href="mailto:{{email}}" target="_self">Contact</a></li>
               </ul>
             </nav>
@@ -52,13 +53,14 @@
         <nav id="mobile-nav" class="mobile main-nav flex--center" ng-class="{'show-menu': showMenu}">
           <ul>
             <li ng-class="{active: isActive('/')}"><a class="main-section" ng-href="#/">Work</a></li>
+            <li ng-class="{active: isActive('/work/movie-note')}"><a ng-href="/work/movie-note">Movie-Note</a></li>
             <li ng-class="{active: isActive('/work/mbp')}"><a ng-href="/work/mbp">Mack Boring</a></li>
             <li ng-class="{active: isActive('/work/gsh')}"><a ng-href="/work/gsh">GSH Group</a></li>
             <li ng-class="{active: isActive('/work/pfc')}"><a ng-href="/work/pfc">Pinnacle FCU</a></li>
             <li ng-class="{active: isActive('/work/sdg')}"><a ng-href="/work/sdg">SDG Heim</a></li>
             <li ng-class="{active: isActive('/work/mdp')}"><a ng-href="/work/mdp">Meyer Depew</a></li>
             <li ng-class="{active: isActive('/work/lhs')}"><a ng-href="/work/lhs">Lee H. Smith</a></li>
-            <li ng-class="{active: isActive('/')}"><a class="main-section" href="">Resume</a></li>
+            <li ng-class="{active: isActive('/')}"><a class="main-section" target="_self" href="/corypierson-resume.pdf" download="/corypierson-resume.pdf">Resume</a></li>
             <li ng-class="{active: isActive('/')}"><a class="main-section" ng-href="mailto:{{email}}" target="_self">Contact</a></li>
 
           </ul>
@@ -101,7 +103,6 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
         <script src="scripts/directives/homework.js"></script>
         <script src="scripts/controllers/navcontroller.js"></script>
         <script src="scripts/directives/singlework.js"></script>

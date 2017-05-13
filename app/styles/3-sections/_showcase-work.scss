@@ -7,25 +7,44 @@
     justify-content: center;
     height: 100%;
     position: relative;
+    overflow: hidden;
     .desktop-work-img{
       align-self: flex-end;
       box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.15);
     }
     .mobile-work{
-      width: 100%;
       position: absolute;
       text-align: center;
-      height: 100%;
+      bottom: -10px;
       .mobile-work-img{
-        position: absolute;
         width: 30%;
         bottom: 0px;
-        max-width: 239px;
+        width: 239px;
         right: 20%;
       }
     }
   }
 }
+
+.mobile-work-wrapper{
+  width: 700px;
+  height: 450px;
+  position: relative;
+}
+
+.mobile-work-img-wrapper{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  margin-right: -100px;
+}
+
+@media (max-width: 780px) {
+  .desktop-work-img{
+      width: 100%;
+    }
+}
+
 
 @media (max-width: $tablet) {
   .display-work{

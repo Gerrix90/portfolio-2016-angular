@@ -18,12 +18,21 @@ angular.module('portfolioApp')
       },
       this.getWork = function(){
         return [
+					{
+        		"id": "movie-note",
+        		"name": "Movie-Note",
+        		"agency": "Cory Pierson",
+        		"role": "Front-End Developer and Designer",
+        		"link": "https://movie-note.firebaseapp.com/",
+            "about": "Move-Note is a personal project I created out of my love for movies. Movie-Note allows a user to lookup and save a movie that interests them to a list for future viewing.",
+            "responsibilities": "This app was built with ReactJS for the front-end and Firebase for the database and authentication. I'm using fetch to call the tmdb api and flexbox for styling."
+        	},
         	{
         		"id": "mbp",
         		"name": "Mack Boring",
         		"agency": "Delia Associates",
         		"role": "Front-End Developer",
-        		"link": "http://www.mackboring.com/",
+        		"link": "http://mbp.delianet.com/",
             "about": "Mack Boring & Parts Company is a leading provider of power products and solutions, including diesel engines and power generation systems, to the recreational and commercial marine, industrial, off highway and military markets.",
             "responsibilities": "This responsive site was built with a custom wordpress theme from the ground up. Using advanced custom fields for client usability. Custom Post types for product organization. Bourbon neat for grid, SCSS for CSS preprocessor, Javascript for interactivity.  Photoshop to edit images."
         	},

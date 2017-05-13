@@ -24,11 +24,6 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
-      })
       .when('/work/:id', {
         templateUrl: 'views/work.html',
         controller: 'WorkCtrl',
@@ -37,6 +32,7 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+      
 
       // user the HTML5 History application
       $locationProvider.html5Mode(true);

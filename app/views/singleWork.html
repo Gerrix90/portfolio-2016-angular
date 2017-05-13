@@ -1,7 +1,12 @@
 <div class="single-work-info flex flex--center">
   <div class="info-wrapper">
+    <h4 class="next-page">
+      <a ng-href="/work/{{nextPageLink}}">
+        Next Project:<i class="fa fa-arrow-circle-right"></i>
+      </a>
+    </h4>
     <h1>{{thisWork.name}}</h1>
-    <h4>
+    <h4 class="view-site">
       <a ng-href="{{thisWork.link}}" target="_blank">
         View Site:<i class="fa fa-arrow-circle-right"></i>
       </a>
@@ -12,10 +17,6 @@
     <h3>{{thisWork.about}}</h3>
     <p>{{thisWork.responsibilities}}</p>
 
-    <h4 class="next-page">
-      <a ng-href="/work/{{nextPageLink}}">
-        Next Project:<i class="fa fa-arrow-circle-right"></i>
-      </a>
-    </h4>
+
   </div>
 </div>
