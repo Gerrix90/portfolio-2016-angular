@@ -15,7 +15,7 @@
     <h4><span>Role:</span> {{thisWork.role}}</h4>
 
     <h3>{{thisWork.about}}</h3>
-    <p>{{thisWork.responsibilities}}</p>
+    <p ng-bind-html="thisWork.responsibilities"></p>
 
 
   </div>
