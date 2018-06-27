@@ -59,7 +59,7 @@ angular.module('portfolioApp')
                         "name": "Mack Boring",
                         "agency": "Delia Associates",
                         "role": "Front-End Developer",
-                        "link": "http://mbp.delianet.com/",
+                        "link": "http://mackboring.com/",
                         "about": "Mack Boring & Parts Company is a leading provider of power products and solutions, including diesel engines and power generation systems, to the recreational and commercial marine, industrial, off highway and military markets.",
                         "responsibilities": "This responsive site was built with a custom wordpress theme from the ground up. Using advanced custom fields for client usability. Custom Post types for product organization. Bourbon neat for grid, SCSS for CSS preprocessor, Javascript for interactivity.  Photoshop to edit images."
                     },
